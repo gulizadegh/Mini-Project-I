@@ -10,6 +10,21 @@
     justify-content: center;
     justify-content: space-between;
     background: var(--Grey-10, #1A1A1A);
+    @media screen and (max-width: 1440px) {
+
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 80px;
+        padding-right: 80px;
+     }
+
+     @media screen and (max-width: 390px) {
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+     }
 }
 
 
@@ -20,6 +35,24 @@
     align-items: center;
     justify-content: center;
     gap: 10.23px;
+    image{
+        width: 48px;
+        height: 48px;
+        @media screen and (max-width: 1440px) {
+
+            width: 34px;
+            height: 34px;
+           
+        }
+
+        @media screen and (max-width: 390px) {
+
+            width: 28px;
+            height: 28px;
+           
+        }
+        
+    }
     p{
         color: white;
         width: 101.766px;
@@ -31,6 +64,21 @@
         font-style: normal;
         font-weight: 500;
         font-family: Urbanist;
+        @media screen and (max-width: 1440px) {
+
+            width: 72.084px;
+            height: 14.537px;
+           
+        }
+
+        @media screen and (max-width: 390px) {
+
+            width: 59.364px;
+            height: 11.972px;
+           
+        }
+
+
     }
 }
 
@@ -38,6 +86,7 @@
    
     
         button {
+            
             background-color:transparent; 
             border: none; 
             border-radius: 5px;
@@ -47,6 +96,19 @@
             font-style: normal;
             font-weight: 500;
             padding: 14px 24px;
+            @media screen and (max-width: 1440px) {
+
+               padding: 12px 20px;
+               gap: 24px;
+               font-size: 14px;
+               
+            }
+
+            @media screen and (max-width: 768px) {
+
+                display: none;
+                
+             }
         }
         
         button:hover {
@@ -60,6 +122,16 @@
 
 
 .navigatiopn-right-side{
+
+
+    img{
+        @media screen and (min-width: 768px) {
+
+            display: none;
+            
+         }
+    }
+
     button {
         background-color:transparent; 
         border: none; 
@@ -70,6 +142,21 @@
         font-style: normal;
         font-weight: 500;
         padding: 14px 24px;
+
+        @media screen and (max-width: 1440px) {
+
+            padding: 12px 20px;
+            font-size: 14px;
+            
+         }
+
+         
+         @media screen and (max-width: 768px) {
+
+            display: none;
+            
+         }
+
     }
     
     button:hover {
