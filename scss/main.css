@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  background: var(--Grey-10, #1A1A1A);
+}
+
+.header {
+  background-image: url(../../assets/images/Group.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  position: relative;
+}
+.header .left-side {
+  color: #FFF;
+  color: var(--Absolute-White, #FFF);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+.header .center {
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.header .center a {
+  color: white;
+}
+.header .right-side {
+  height: 32px;
+  width: 32px;
+  border-radius: 75px;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  right: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  font-family: Urbanist;
+}
+
+.navbar {
+  border-top: 1px solid var(--Grey-15, #262626);
+  border-bottom: 1px solid var(--Grey-15, #262626);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 162px;
+  padding-right: 162px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background: var(--Grey-10, #1A1A1A);
+}
+
+.navigation-left-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10.23px;
+}
+.navigation-left-side p {
+  color: white;
+  width: 101.766px;
+  height: 20.523px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: Urbanist;
+}
+
+.navigation-center {
+  gap: 30px;
+}
+.navigation-center button {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  color: var(--Absolute-White, #FFF);
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 14px 24px;
+}
+.navigation-center button:hover {
+  background: var(--Grey-08, #141414);
+  padding: 14px 24px;
+  border: 1px solid var(--Grey-15, #262626);
+}
+
+.navigatiopn-right-side button {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  color: var(--Absolute-White, #FFF);
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 14px 24px;
+}
+.navigatiopn-right-side button:hover {
+  background: var(--Grey-08, #141414);
+  padding: 14px 24px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,46 @@
+html{
+background: var(--Grey-10, #1A1A1A);;
+}
+
+.header{
+ background-image: url(../../assets/images/Group.png);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ padding-top: 18px;
+ padding-bottom: 18px;
+ position: relative;
+
+ .left-side{
+    color: #FFF;
+    color: var(--Absolute-White, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;}
+  
+  .center{
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: underline;
+     a{
+        color: white;
+     }
+    }
+
+  .right-side{
+    height: 32px;
+    width: 32px;
+    border-radius: 75px;
+    background: rgba(255, 255, 255, 0.10);
+    position: absolute;
+    right: 80px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
