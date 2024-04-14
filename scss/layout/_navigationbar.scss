@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     border-top: 1px solid var(--Grey-15, #262626);
     border-bottom: 1px solid var(--Grey-15, #262626);
     padding-top: 16px;
@@ -10,50 +10,54 @@
     justify-content: center;
     justify-content: space-between;
     background: var(--Grey-10, #1A1A1A);
+
     @media screen and (max-width: 1440px) {
 
         padding-top: 14px;
         padding-bottom: 14px;
         padding-left: 80px;
         padding-right: 80px;
-     }
+    }
 
-     @media screen and (max-width: 390px) {
+    @media screen and (max-width: 390px) {
 
         padding-top: 20px;
         padding-bottom: 20px;
         padding-left: 16px;
         padding-right: 16px;
-     }
+    }
 }
 
 
 
 
-.navigation-left-side{
+.navigation-left-side {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10.23px;
-    image{
+
+    image {
         width: 48px;
         height: 48px;
+
         @media screen and (max-width: 1440px) {
 
             width: 34px;
             height: 34px;
-           
+
         }
 
         @media screen and (max-width: 390px) {
 
             width: 28px;
             height: 28px;
-           
+
         }
-        
+
     }
-    p{
+
+    p {
         color: white;
         width: 101.766px;
         height: 20.523px;
@@ -64,77 +68,84 @@
         font-style: normal;
         font-weight: 500;
         font-family: Urbanist;
+
         @media screen and (max-width: 1440px) {
 
             width: 72.084px;
             height: 14.537px;
-           
+
         }
 
         @media screen and (max-width: 390px) {
 
             width: 59.364px;
             height: 11.972px;
-           
+
         }
 
 
     }
 }
 
-.navigation-center{ gap: 30px;
-   
-    
-        button {
-            
-            background-color:transparent; 
-            border: none; 
-            border-radius: 5px;
-            color: var(--Absolute-White, #FFF);
-            font-family: Urbanist;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            padding: 14px 24px;
-            @media screen and (max-width: 1440px) {
+.navigation-center {
+    gap: 30px;
 
-               padding: 12px 20px;
-               gap: 24px;
-               font-size: 14px;
-               
-            }
 
-            @media screen and (max-width: 768px) {
+    button {
 
-                display: none;
-                
-             }
-        }
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        color: var(--Absolute-White, #FFF);
+        font-family: Urbanist;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        padding: 14px 24px;
         
-        button:hover {
-            background: var(--Grey-08, #141414);
-            padding: 14px 24px;
-            border: 1px solid var(--Grey-15, #262626);;
-        }
         
-    
+
+        @media screen and (max-width: 1440px) {
+
+            padding: 12px 20px;
+            gap: 24px;
+            font-size: 14px;
+
+        }
+
+        @media screen and (max-width: 768px) {
+
+            display: none;
+
+        }
+    }
+
+    button:hover {
+        
+        background: var(--Grey-08, #141414);
+        padding: 14px 24px;
+        border: 1px solid var(--Grey-15, #262626);
+        
+    }
+
+
 }
 
 
-.navigatiopn-right-side{
+.navigatiopn-right-side {
 
 
-    img{
+    img {
         @media screen and (min-width: 768px) {
 
             display: none;
-            
-         }
+
+        }
     }
 
     button {
-        background-color:transparent; 
-        border: none; 
+        background-color: transparent;
+        border: 1px solid transparent;
         border-radius: 5px;
         color: var(--Absolute-White, #FFF);
         font-family: Urbanist;
@@ -147,20 +158,21 @@
 
             padding: 12px 20px;
             font-size: 14px;
-            
-         }
 
-         
-         @media screen and (max-width: 768px) {
+        }
+
+
+        @media screen and (max-width: 768px) {
 
             display: none;
-            
-         }
+
+        }
 
     }
-    
+
     button:hover {
         background: var(--Grey-08, #141414);
         padding: 14px 24px;
+        border: 1px solid var(--Grey-15, #262626);
     }
 }
