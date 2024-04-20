@@ -1,222 +1,376 @@
 .grid {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 80px;
+  position: relative;
+  background-color: #141414;
+
+  @media screen and (max-width: 1440px) {
+    gap: 60px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
+
+  .left-side {
     display: flex;
-    align-items: stretch;
-    justify-content: space-around;
-    gap: 80px;
-    position: relative;
+    padding-left: 162px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    align-self: stretch;
+    width: 50%;
+    background-color: #141414;
 
-
-    .left-side {
-        display: flex;
-        padding-left: 162px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 60px;
-        align-self: stretch;
-        width: 50%;
-
-        .text {
-           
-            
-
-            .heading {
-                color: var(--Absolute-White, #FFF);
-                font-family: Urbanist;
-                font-size: 60px;
-                font-style: normal;
-                font-weight: 600;
-                width: 100%;
-                height: auto;
-                padding-top: 144px;
-            }
-
-            .footer {
-                color: var(--Grey-60, #999);
-                font-family: Urbanist;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 500;
-                width: 100%;
-                height: auto;
-                padding-top: 24px;
-
-            }
-
-        }
-
-
-        .button-container {
-            display: flex;
-            align-items: center;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            gap: 20px;
-
-            button:first-child {
-
-                display: flex;
-                padding: 18px 24px;
-                justify-content: center;
-                align-items: center;
-                gap: 8px;
-                cursor: pointer;
-                border-radius: 10px;
-                border: 1px solid var(--Grey-15, #262626);
-                background-color: transparent;
-                color: #FFFFFF;
-                font-family: inherit;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 500;
-
-            }
-
-            button:last-child {
-
-                display: flex;
-                padding: 18px 24px;
-                justify-content: center;
-                align-items: center;
-                gap: 8px;
-                border-radius: 10px;
-                background: var(--Purple-60, #703BF7);
-                cursor: pointer;
-                background-color: #703BF7;
-                color: #FFFFFF;
-                font-family: inherit;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 500;
-                border: none;
-            }
-
-        }
-
+    @media screen and (max-width: 1440px) {
+      padding-left: 80px;
     }
 
-    
+    @media screen and (max-width: 1000px) {
+      height: 100%;
+      width: 100%;
+      padding-left: 0px;
+    }
 
-    .card-container {
+    .text {
+      .heading-text {
+        color: var(--Absolute-White, #fff);
+        font-family: Urbanist;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 600;
+        width: 100%;
+        height: auto;
+        padding-top: 144px;
 
+        @media screen and (max-width: 1440px) {
+          font-size: 46px;
+        }
+        @media screen and (max-width: 1000px) {
+          height: 100%;
+          width: 100%;
+          color: var(--Absolute-White, #fff);
+          font-family: Urbanist;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 600;
+        }
+      }
+
+      .footer-text {
+        color: var(--Grey-60, #999);
+        font-family: Urbanist;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        width: 100%;
+        height: auto;
+        padding-top: 24px;
+
+        @media screen and (max-width: 1440px) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: 1000px) {
+          height: 100%;
+          width: 100%;
+          color: var(--Grey-60, #999);
+          font-family: Urbanist;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .button-container {
+      display: flex;
+      align-items: center;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      gap: 20px;
+
+      button:first-child {
         display: flex;
-        align-items: center;
+        padding: 18px 24px;
         justify-content: center;
-        gap: 20px;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid var(--Grey-15, #262626);
+        background-color: transparent;
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
 
-        .left-container {
-
-            display: flex;
-            padding: 16px 24px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 2px;
-            border-radius: 12px;
-            border: 1px solid var(--Grey-15, #262626);
-            background: var(--Grey-10, #1A1A1A);
-
-            .container-heading {
-                color: var(--Absolute-White, #FFF);
-                font-family: Urbanist;
-                font-size: 40px;
-                font-style: normal;
-                font-weight: 700;
-                align-self: stretch;
-            }
-
-            .container-footer {
-                align-self: stretch;
-                color: var(--Grey-60, #999);
-                font-family: Urbanist;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 500;
-            }
-
-
+        @media screen and (max-width: 1440px) {
+          display: flex;
+          padding: 14px 20px;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          border-radius: 8px;
+          border: 1px solid var(--Grey-15, #262626);
+          font-size: 14px;
         }
 
-        .middle-container {
-            display: flex;
-            padding: 16px 24px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 2px;
-            border-radius: 12px;
-            border: 1px solid var(--Grey-15, #262626);
-            background: var(--Grey-10, #1A1A1A);
+        @media screen and (max-width: 1000px) {
+          display: flex;
+          padding: 14px 20px;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          align-self: stretch;
+          border-radius: 8px;
+          border: 1px solid var(--Grey-15, #262626);
+          color: var(--Absolute-White, #fff);
+          font-family: Urbanist;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+         
+        }
+      }
 
-            .container-heading {
-                align-self: stretch;
-                color: var(--Absolute-White, #FFF);
-                font-family: Urbanist;
-                font-size: 40px;
-                font-style: normal;
-                font-weight: 700;
+      button:last-child {
+        display: flex;
+        padding: 18px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 10px;
+        background: var(--Purple-60, #703bf7);
+        cursor: pointer;
+        background-color: #703bf7;
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        border: none;
 
-
-
-            }
-
-            .container-footer {
-                align-self: stretch;
-                color: var(--Grey-60, #999);
-                font-family: Urbanist;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 500;
-
-            }
+        @media screen and (max-width: 1440px) {
+          display: flex;
+          padding: 14px 20px;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          border-radius: 8px;
+          background: var(--Purple-60, #703bf7);
+          font-size: 14px;
         }
 
-        .right-container {
-            display: flex;
-            padding: 16px 24px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 2px;
-            border-radius: 12px;
-            border: 1px solid var(--Grey-15, #262626);
-            background: var(--Grey-10, #1A1A1A);
-
-
-            .container-heading {
-                align-self: stretch;
-                color: var(--Absolute-White, #FFF);
-                font-family: Urbanist;
-                font-size: 40px;
-                font-style: normal;
-                font-weight: 700;
-
-            }
-
-            .container-footer {
-                align-self: stretch;
-                color: var(--Grey-60, #999);
-                font-family: Urbanist;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 500;
-
-            }
+        @media screen and (max-width: 1000px) {
+          display: flex;
+          padding: 14px 20px;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          align-self: stretch;
+          border-radius: 8px;
+          border: 1px solid var(--Grey-15, #262626);
+          color: var(--Absolute-White, #fff);
+          font-family: Urbanist;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
         }
+      }
+    }
+  }
 
+  .card-container {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    @media screen and (max-width: 1440px) {
+      gap: 16px;
     }
 
+    .left-container {
+      display: flex;
+      padding: 16px 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      border-radius: 12px;
+      border: 1px solid var(--Grey-15, #262626);
+      background: var(--Grey-10, #1a1a1a);
 
-    .right-side{
-        position: relative;
-        width: 50%;
-        img{
-            width: 100%;
-            height: 100%;
-            
-            object-fit: cover;
+      @media screen and (max-width: 1440px) {
+        padding: 16px 24px;
+        border-radius: 10px;
+        border: 1px solid var(--Grey-15, #262626);
+        background: var(--Grey-10, #1a1a1a);
+      }
+
+      @media screen and (max-width: 1000px) {
+        padding-left: 0;
+      }
+
+      .container-heading {
+        color: var(--Absolute-White, #fff);
+        font-family: Urbanist;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        align-self: stretch;
+
+        @media screen and (max-width: 1440px) {
+          font-size: 30px;
         }
-        .center {
-            top: 144px;
-            position: absolute;
-            transform: translateX(-50%);
+      }
+
+      .container-footer {
+        align-self: stretch;
+        color: var(--Grey-60, #999);
+        font-family: Urbanist;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+
+        @media screen and (max-width: 1440px) {
+          font-size: 16px;
         }
+      }
     }
 
+    .middle-container {
+      display: flex;
+      padding: 16px 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      border-radius: 12px;
+      border: 1px solid var(--Grey-15, #262626);
+      background: var(--Grey-10, #1a1a1a);
+
+      @media screen and (max-width: 1440px) {
+        padding: 16px 24px;
+        border-radius: 10px;
+        border: 1px solid var(--Grey-15, #262626);
+        background: var(--Grey-10, #1a1a1a);
+      }
+
+      .container-heading {
+        align-self: stretch;
+        color: var(--Absolute-White, #fff);
+        font-family: Urbanist;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+
+        @media screen and (max-width: 1440px) {
+          font-size: 30px;
+        }
+      }
+
+      .container-footer {
+        align-self: stretch;
+        color: var(--Grey-60, #999);
+        font-family: Urbanist;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+
+        @media screen and (max-width: 1440px) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .right-container {
+      display: flex;
+      padding: 16px 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      border-radius: 12px;
+      border: 1px solid var(--Grey-15, #262626);
+      background: var(--Grey-10, #1a1a1a);
+
+      @media screen and (max-width: 1440px) {
+        padding: 16px 24px;
+        border-radius: 10px;
+        border: 1px solid var(--Grey-15, #262626);
+        background: var(--Grey-10, #1a1a1a);
+      }
+
+      .container-heading {
+        align-self: stretch;
+        color: var(--Absolute-White, #fff);
+        font-family: Urbanist;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+
+        @media screen and (max-width: 1440px) {
+          font-size: 30px;
+        }
+      }
+
+      .container-footer {
+        align-self: stretch;
+        color: var(--Grey-60, #999);
+        font-family: Urbanist;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+
+        @media screen and (max-width: 1440px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .right-side {
+    position: relative;
+    width: 50%;
+    background: linear-gradient(
+        238deg,
+        #2a213f 8.76%,
+        rgba(25, 25, 25, 0) 50.09%
+      ),
+      #191919 50% / cover no-repeat;
+    @media screen and (max-width: 1000px) {
+      height: 100%;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      @media screen and (max-width: 1440px) {
+        height: 100%;
+      }
+
+      @media screen and (max-width: 1000px) {
+        height: 100%;
+        width: 100%;
+        background: url(../../assets//icons/mobile-vectors.png);
+        border-radius: 2%;
+      }
+    }
+
+    .center {
+      top: 144px;
+      position: absolute;
+      transform: translateX(-50%);
+
+      @media screen and (max-width: 1440px) {
+        width: 129px;
+        height: 129px;
+      }
+
+      @media screen and (max-width: 1000px) {
+      }
+    }
+  }
 }
